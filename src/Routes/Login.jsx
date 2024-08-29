@@ -70,6 +70,12 @@ function Login() {
           Go Back
         </Link>
       </div>
+      <div>
+        <p>Used Reqres.in API for Login purpose</p>
+        <p>Demo username : "eve.holt@reqres.in"</p>
+        <p>Demo Password : "cityslicka"</p>
+        <p>Please use these credentials for log in</p>
+      </div>
     </div>
   );
 }

@@ -59,12 +59,6 @@ function Dashboard() {
         </p>
       </div>
       <br />
-      <div data-testid ="sort-container">
-      <button data-testid="low-to-high" disabled={orderBy==="asc"} onClick={()=> handleOrderBy("asc")}>Sort low to high</button>
-      <button data-testid="high-to-low" disabled={orderBy==="dsc"} onClick={()=> handleOrderBy("dsc")}>Sort high to low</button>
-      </div>
-      <br />
-      <br />
       <Pagination current = {page} onChange= {handlePage} totalPage={totalPage} />
       <div style={{ display: "flex", justifyContent: "center" }}>
           {loading ? <Loader/> : <ProductList products={data}/>}
